@@ -14,6 +14,10 @@ The minimal number of moves required to solve a Tower of Hanoi puzzle is 2^n −
 
 An interactive code, where the user can define the number of disks, can be found here: [interactive_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/interactive_toh.cpp)
 
+And here is a general solution to the Tower of Hanoi puzzle, which solves the puzzle in cases where we are dealing with over 3 rods: [general_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/tree/main/src)
+
+We used the Frame-Stewart algorithm, which involves splitting disks into intermediate towers before moving the remaining disks to their destination. 
+
 ## Iterative solution
 
 A simple solution for the toy puzzle is to alternate moves between the smallest piece and a non-smallest piece.
