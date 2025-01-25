@@ -12,6 +12,8 @@ The minimal number of moves required to solve a Tower of Hanoi puzzle is 2^n −
 
 ![image](https://github.com/user-attachments/assets/42c87262-748a-487d-8a75-800338cbf3e7)
 
+An interactive code, where the user can define the number of disks, can be found here: [interactive_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/interactive_toh.cpp)
+
 ## Iterative solution
 
 A simple solution for the toy puzzle is to alternate moves between the smallest piece and a non-smallest piece.
@@ -29,7 +31,7 @@ for (int i = 1; i <= totalMoves; i++)
     }
 ```
 
-The full code can be found here [iterative_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/iterative_toh.cpp), with time complexity O(2^n)
+The full code can be found here [iterative_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/iterative_toh.cpp), with time complexity O(2^n)
 
 ## Recursive solution
 
@@ -53,6 +55,6 @@ Assuming all n disks are distributed in valid arrangements among the pegs; assum
   
 The full Tower of Hanoi solution then moves n disks from the source peg A to the target peg C, using B as the spare peg.
 
-The full code can be found here [recursive_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/recursive_toh.cpp), with time complexity O(2^n).
+The full code can be found here [recursive_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/recursive_toh.cpp), with time complexity O(2^n).
 
 ## Binary solution
