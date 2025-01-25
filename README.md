@@ -93,5 +93,13 @@ For example, for move 9 in a 4-disk puzzle:
 Thus, at move 9, the configuration is:
 
 Peg 0: Disks 2 and 3
+
 Peg 2: Disks 1 and 4
+
 Peg 1: Empty
+
+The binary approach can be implemented in two different ways:
+
+Efficient and straightforward way relying on bitwise operations [binary_toh_1.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/binary_toh_1.cpp)
+
+Detailed and state-aware, uses binary representation of the move number to determine the exact position of each disk at any given point [binary_toh_2.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/binary_toh_2.cpp)
