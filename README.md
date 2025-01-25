@@ -67,3 +67,31 @@ towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
 The full code can be found here [recursive_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/recursive_toh.cpp), with time complexity O(2^n).
 
 ## Binary solution
+
+The Tower of Hanoi problem can be solved efficiently using the binary representation of the move number. Each move corresponds to a unique binary number, and the state of the disks at any move can be derived directly from the binary digits of that move number. This method eliminates the need for recursion or explicit simulation of prior moves, as all information can be inferred from the current move number.
+
+Peg Assignment:
+
+  • A 0 indicates that the disk is on the initial peg
+  
+  • A 1 indicates that the disk is on the final peg (the middle peg if the number of disks is even, or the right peg if the number of disks is odd)
+  
+  • Disks with consecutive binary digits that are identical (00 or 11) remain stacked on the same peg, while disks with alternating binary digits (01 or 10) move to a different peg.
+  
+Disk Movement Rule:
+
+The peg to which a disk moves is determined by counting the number of trailing zeros in the binary representation of the move number. The disk corresponding to this count is moved the smallest possible distance to the left or right (wrapping around as needed).
+
+For example, for move 9 in a 4-disk puzzle:
+
+  - The binary representation is 1001
+  - The largest disk (bit 1, farthest left) is 1, so it is on the final peg (peg 2)
+  - The second-largest disk is 0, so it is on the initial peg (peg 0)
+  - The third-largest disk is also 0, so it remains stacked on peg 0
+  - The smallest disk (bit 4, farthest right) is 1, so it is on the final peg (peg 2), stacked on top of the largest disk
+
+Thus, at move 9, the configuration is:
+
+Peg 0: Disks 2 and 3
+Peg 2: Disks 1 and 4
+Peg 1: Empty
