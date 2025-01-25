@@ -17,7 +17,7 @@ The minimal number of moves required to solve a Tower of Hanoi puzzle is 2^n −
 A simple solution for the toy puzzle is to alternate moves between the smallest piece and a non-smallest piece.
 We can implement this using a trivial algorithm:
 
-'''C
+```C
 for (int i = 1; i <= totalMoves; i++)
     {
         if (i % 3 == 0)
@@ -27,6 +27,6 @@ for (int i = 1; i <= totalMoves; i++)
         else
             moveDisk(src, aux);
     }
-'''
+```
 
 ## Recursive solution
