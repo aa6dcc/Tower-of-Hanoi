@@ -30,6 +30,7 @@ for (int i = 1; i <= totalMoves; i++)
             moveDisk(src, aux);
     }
 ```
+![image](https://github.com/user-attachments/assets/a131e413-2ef6-4338-ad8b-91ffde556dec)
 
 The full code can be found here [iterative_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/iterative_toh.cpp), with time complexity O(2^n)
 
