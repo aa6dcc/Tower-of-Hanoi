@@ -62,6 +62,7 @@ towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
          << " to rod " << to_rod << endl;
     towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
 ```
+![image](https://github.com/user-attachments/assets/8f178855-cc5e-407b-b42f-c68d544f45b1)
 
 The full code can be found here [recursive_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/recursive_toh.cpp), with time complexity O(2^n).
 
