@@ -44,8 +44,11 @@ For the Towers of Hanoi:
 Assuming all n disks are distributed in valid arrangements among the pegs; assuming there are m top disks on a source peg, and all the rest of the disks are larger than m, so they can be safely ignored; to move m disks from a source peg to a target peg using a spare peg, without violating the rules:
 
   • Move m − 1 disks from the source to the spare peg, by the same general solving procedure. Rules are not violated, by assumption. This leaves the disk m as a top disk on the source peg
+  
   • Move the disk m from the source to the target peg, which is guaranteed to be a valid move, by the assumptions — a simple step
+  
   • Move the m − 1 disk that we have just placed on the spare, from the spare to the target peg by the same general solving procedure, so they are placed on top of the disk m without violating the rules
+  
   • The base case is to move 0 disks, that is, do nothing — which does not violate the rules
   
 The full Tower of Hanoi solution then moves n disks from the source peg A to the target peg C, using B as the spare peg.
