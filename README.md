@@ -53,4 +53,6 @@ Assuming all n disks are distributed in valid arrangements among the pegs; assum
   
 The full Tower of Hanoi solution then moves n disks from the source peg A to the target peg C, using B as the spare peg.
 
+The full code can be found here [recursive_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/recursive_toh.cpp), with time complexity O(2^n).
+
 ## Binary solution
