@@ -8,7 +8,7 @@ The Tower of Hanoi is a mathematical game consisting of three rods and a number 
   
   • No disk may be placed on top of a disk that is smaller than it.
   
-The minimal number of moves required to solve a Tower of Hanoi puzzle is 2n − 1, where n is the number of disks.
+The minimal number of moves required to solve a Tower of Hanoi puzzle is 2^n − 1, where n is the number of disks.
 
 ![image](https://github.com/user-attachments/assets/42c87262-748a-487d-8a75-800338cbf3e7)
 
