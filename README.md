@@ -55,6 +55,13 @@ Assuming all n disks are distributed in valid arrangements among the pegs; assum
   
 The full Tower of Hanoi solution then moves n disks from the source peg A to the target peg C, using B as the spare peg.
 
+```C
+towerOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+    cout << "Move disk " << n << " from rod " << from_rod
+         << " to rod " << to_rod << endl;
+    towerOfHanoi(n - 1, aux_rod, to_rod, from_rod);
+```
+
 The full code can be found here [recursive_toh.cpp](https://github.com/aa6dcc/Tower-of-Hanoi/blob/main/src/recursive_toh.cpp), with time complexity O(2^n).
 
 ## Binary solution
